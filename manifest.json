@@ -1,0 +1,32 @@
+{
+  "name": "mailer-sparkpost",
+  "description": "Mailer job type for Foxx using SparkPost.",
+  "author": "Christian Pekeler",
+  "version": "1.0.0",
+  "license": "Apache License, Version 2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pekeler/foxx-mailer-sparkpost.git"
+  },
+  "contributors": [
+    {
+      "name": "Christian Pekeler",
+      "email": "christian@pekeler.org"
+    }
+  ],
+  "exports": "exports.js",
+  "scripts": {
+    "mailer": "mailer.js"
+  },
+  "configuration": {
+    "apiKey": {
+      "description": "Your SparkPost API key.",
+      "type": "string"
+    },
+    "maxFailures": {
+      "description": "Maximum number of times to retry a job if it fails.",
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
